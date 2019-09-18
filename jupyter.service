@@ -1,0 +1,14 @@
+[Unit]
+Description=Jupyter Notebook
+
+[Service]
+Type=simple
+ExecStart=/opt/jupyter/jupyter_executor.sh
+User=sungil
+Group=sungil
+WorkingDirectory=/home/sungil/
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
